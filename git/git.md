@@ -50,7 +50,7 @@ git push -u origin master
 
 ### Ein Projekt aus dem Repos downloaden (clonen)
 
-`git clone https://fdfd`
+`git clone https://github.com/htl-leonding/1920-4ahitm-itp.git`
 
 ### Neue und/oder geänderte Dateien ins das Repo einpflegen
 
@@ -93,11 +93,26 @@ ev. mit Verwendung von .gitconfig
 
 ### Zweige für eigene Features erstellen
 
+````
+git branch new-branch
+````
+
 ### Branch wechseln
+
+```
+$ git checkout new-branch
+Switched to branch 'new-branch'
+```
 
 In einem Zweig Daten ändern und anschließend im anderen Zweig Daten ändern und beide Änderungen commiten / pushen
 
 ### Branch mergen
+
+merge the new-feature into the master branch
+```
+git checkout master
+git merge new-branch
+```
 
 ### Pull requests durchführen
 
