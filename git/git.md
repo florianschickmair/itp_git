@@ -63,7 +63,7 @@ git add .
 #### Dateien aus der Staging Area entfernen
 
 ```
-git reset
+git reset file.txt
 ```
 
 #### Dateien in das local-repo einpflegen
