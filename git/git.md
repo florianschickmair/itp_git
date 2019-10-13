@@ -54,28 +54,38 @@ git push -u origin master
 
 ### Neue und/oder geänderte Dateien ins das Repo einpflegen
 
-#### Dateien in die Staging Area einpflegen
+#### Alle Dateien in die Staging Area einpflegen
 
 ```
 git add .
 ```
-
-#### Dateien aus der Staging Area entfernen
+#### Nur bestimmte Datein in die Staging Area einpflegen
 
 ```
-git reset file.txt
+git add file.md
+```
+
+#### Alle Dateien aus der Staging Area entfernen die zuvor mit git add hinzugefügt wurden
+
+```
+git reset HEAD .
+```
+#### Bestimmte Datei aus der Staging Area entfernen die zuvor mit git add hinzugefügt wurde
+
+```
+git reset HEAD file.md
 ```
 
 #### Dateien in das local-repo einpflegen
 
 ```
-git commit -m"message"
+git commit -m"first commit"
 ```
 
 #### Dateien aus dem local-repo entfernen
 
 ```
-git rm file.txt
+git reset --soft HEAD^
 ```
 
 #### Dateien in das remote-repo einpflegen
@@ -83,10 +93,6 @@ git rm file.txt
 ```
 git push origin master
 ```
-
-#### Dateien aus dem remote-repo entfernen
-
-Pull the changes from the server ```git rm``` on the local repo
 
 ### Status des Git-Working-Directories ansehen
 
